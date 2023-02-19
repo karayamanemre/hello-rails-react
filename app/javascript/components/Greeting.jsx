@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { fetchGreeting } from '../store';
 
-const Greeting = () => {
-  const [greeting, setGreeting] = useState('');
-
+const Greeting = ({ greeting, dispatch }) => {
   useEffect(() => {
-    fetch('/api/greetings/random')
-      .then((response) => response.json())
-      .then((data) => setGreeting(data.message))
-      .catch((error) => console.error(error));
-  }, []);
+    dispatch(fetchGreeting());
+  }, [dispatch]);
 
   return (
     <div>
@@ -18,4 +15,8 @@ const Greeting = () => {
   );
 };
 
-export default Greeting;
+const mapStateToProps = (state) => ({
+  greeting: state.greeting,
+});
+
+export default connect(mapStateToProps)(Greeting);
