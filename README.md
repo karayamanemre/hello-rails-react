@@ -121,7 +121,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--
+- This app will go to the moon.
+- And then Mars.
+- I think 2 future features is enough.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +149,7 @@ If you like this project, kindly give it a star⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
--
+- Aliens.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
